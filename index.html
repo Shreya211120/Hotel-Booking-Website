@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hotel Tour</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script stc="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/logo.png" type="images/png">
+        </head>
+
+        <body>
+            <header class="header" id="header">
+                <div class="head-top">
+                    <div class="site-name">
+                        <span>Hotel Tour</span>
+                        <h1>Shreya Chatterjee</h1>
+                    
+
+                    </div>
+                    <div clas="site-nav">
+                       <span id="nav-btn">Menu<i class="fa fa-bars"></i></span>
+                    
+                    </div>
+                </div>
+                <div class="head-bottom flex">
+                    <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                    <p > Provide service that lets property owners rent out their spaces to travelers looking for a place to stay.</p>
+                    <button type = "button" class = "head-btn">GET STARTED</button>
+                    <button class="btn confirm-btn" id="confirm">Confirm</button>
+        
+                        <button class="btn update-btn" id="update">Update</button>
+                        <button class="btn pending-btn" id="pending">Pending</button>
+                        <button class="btn can-btn" id="cancel">Cancel</button>
+                        
+                
+                </div>
+                </header>
+                <div class = "sidenav" id = "sidenav">
+                    <span class = "cancel-btn" id = "cancel-btn">
+                        Back
+                    </span>
+
+                <ul class="navbar">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#rooms">rooms</a></li>
+                    <li><a href="#customers">customers</a></li>
+                </ul>
+                <button class = "btn sign-up">sign up</button>
+                <button class = "btn log-in">log in</button>
+        
+                </div>
+            
+                <div id="modal"></div>
+                <section class="services-section" id="services">
+                    <div class="title">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="services-container">
+                        <article class="services">
+                            <div class="services-icon">
+                                <span>
+                                    <i class="fas fa-utensils"></i>
+                                </span>
+                                </div>
+                                <div class="services-content"></div>
+                                <h2>Food Services/ Food runner</h2>
+                                <p> We supply palatable food prepared under acceptable standards of sanitation, aesthetically served at specified cost.</p>
+                                
+                            </div>
+                        </article>
+                        <article class = "service">
+                            <div class = "service-icon">
+                                <span>
+                                    <i class = "fas fa-door-closed"></i>
+                                </span>
+                            </div>
+                            <div class = "service-content">
+                                <h2>Refreshments</h2>
+                                <p>To drive-in restaurant, café, tea-room or coffee shop, being a building other than a hotel, residential club, or boarding house, designed and used for the preparation or retail sale of meals and refreshments as well as the retail sale of fresh produce, cold drinks,  reading material and sweets.</p>
+                                </div>
+                                </article>
+                        
+                   
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Providing secure rooms are often used for the storage of sensitive information or large assets. They are primarily designed to protect against surreptitious attack, but may offer some resistance to forcible entry and slowing a marauding terrorist attack.</p>
+                        </div>
+                        </article>
+                    </div>
+                        </section>
+                        <div class="book">
+                            <form class="book-form">
+                                <label for="checkin-date">Checkin date:</label>
+                                <input type="date" id="checkin-date">
+                            </div>
+                            <div class = "book-form">
+                                <label for = "checkout-date">Check Out Date: </label>
+                                <input type = "date" id = "chekout-date">
+                            </div>
+                            <div class = "book-form">
+                                <label for = "adult">Adults: </label>
+                                <input type = "number" min = "1" value = "1" id = "adult">
+                            </div>
+                            <div class = "book-form">
+                                <label for = "children">Children: </label>
+                                <input type = "number" min = "1" value = "1" id = "children">
+                            </div>
+                            <div class = "book-form">
+                                <label for = "rooms">Rooms: </label>
+                                <input type = "number" min = "1" value = "1" id = "rooms">
+                            </div>
+                            <div class = "book-form">
+                                <input type = "submit" class = "btn" value = "Book Now">
+                            </div>
+                            </form>
+                        </div>
+                        <section class="rooms sec-width" id="rooms">
+                            <div class="title">
+                                <h2>Rooms</h2>
+                                </div>
+                                <div class="rooms-container">
+                                    <article class="room">
+                                        <div class="room image">
+                                            <img src="images/room1.png" alt="room image">
+                                        </div>
+                                        <p class="rate">
+                                            <span >Rs 4000</span>
+                                            Per Night
+                                        </p>
+                                        <button type="button" class="btn">Book now</button>
+                                    </article>
+                                    <article class = "room">
+                                        <div class = "room-image">
+                                            <img src = "images/room2.png" alt = "room image">
+                                        </div>
+                                        <div class = "room-text">
+                                            <p class = "rate">
+                                                <span>Rs 2500/</span> Per Night
+                                            </p>
+                                            <button type = "button" class = "btn">Book now</button>
+                                        </div>
+                                    </article>
+                                    <article class = "room">
+                                        <div class = "room-image">
+                                            <img src = "images/room3.jpg" alt = "room image"  >
+                                        </div>
+                                        <div class = "room-text">
+                                            <p class = "rate">
+                                                <span>Rs 6500/</span> Per Night
+                                            </p>
+                                            <button type = "button" class = "btn">Book now</button>
+                                        </div>
+                                    </article>
+                                    <article class = "room">
+                                        <div class = "room-image">
+                                            <img src = "images/room4.jpg" alt = "room image" >
+                                        </div>
+                                        <div class = "room-text">
+                                            <p class = "rate">
+                                                <span>Rs 6800/</span> Per Night
+                                            </p>
+                                            <button type = "button" class = "btn">Book now</button>
+                                        </div>
+                                    </article>
+                                </div>
+                        </section>
+                        <section class = "customers" id = "customers">
+                            <div class = "sec-width">
+                                <div class = "title">
+                                    <h2>customers</h2>
+                                </div>
+                                <div class = "customers-container">
+                                    <!-- single customer -->
+                                    <div class = "customer">
+                                        <div class = "rating">
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "far fa-star"></i></span>
+                                        </div>
+                                        <h3>We Loved it</h3>
+                                        <p>The location is good. Staffs are good and helpful. It's a new property. Have kette in the room so easy to make coffee or hot water. The hotel serve good amount of breakfast in the room.</p>
+                                        <img src="images/cust1.jpg" alt="customer image" >
+                                        <span>Customer Name, Country</span>
+                                    </div>
+                                    <div class="customer">
+                                        <div class="rating">
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "fas fa-star"></i></span>
+                                            <span><i class = "far fa-star"></i></span> 
+                                        </div>
+                                        <h3>Comfortable Living</h3>
+                                        <p>Spacious rooms with good facilities and helpful staff. Staff behaviour and service and also the pickup and drop service to the airport</p>
+                                        <img src = "images/cust2.jpg" alt = "customer image" >
+                                        <span>Customer Name, Country</span>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </section>
+
+                                        <footer class="footer">
+                                            <div class="footer-container">
+                                                <div>
+                                                    <h2>About Us</h2>
+                                                    <p>We provide commercial establishment offering lodging to travelers and sometimes to permanent residents, and often having restaurants, meeting rooms, stores, etc., that are available to the general public.</p>
+                                                <ul class="social icons">
+                                                    <li class="flex">
+                                                        <i class="fa fa-twitter fa-2x"></i>
+                                                    </li>
+                                                    <li class = "flex">
+                                                        <i class = "fa fa-facebook fa-2x"></i>
+                                                    </li>
+                                                    <li class = "flex">
+                                                        <i class = "fa fa-instagram fa-2x"></i>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                                <div>
+                                                    <h2>Useful Links</h2>
+                                                    <a href="#">Blogs</a>
+                                                    <a href="#">Rooms</a>
+                                                    <a href="#">Subscription</a>
+                                                    <a href="#">Gift Cards</a>
+                                                </div>
+                                                <div>
+                                                    <h2>Privacy</h2>
+                                                    <a href="#">Career</a>
+                                                    <a href="#">About us</a>
+                                                    <a href="#">Contact us</a>
+                                                    <a href="#">Services</a>
+                                                </div>
+
+                                                <div>
+                                                    <h2>Have a question?</h2>
+                                                    <div class="contact-item">
+                                                        <span>
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                        </span>
+                                                        <span>
+                                                            203 Fake St.Mountain View, San Francisco, California, USA
+                                                        </span>
+                                                    </div>
+                                                    <div class="contact-item">
+                                                        <span>
+                                                            <i class="fas fa-phone-alt"></i>
+                                                        </span>
+                                                        <span>
+                                                            +84545 37534 48
+                                                        </span>
+                                                    </div>
+                                                    <div class = "contact-item">
+                                                        <span>
+                                                            <i class = "fas fa-envelope"></i>
+                                                        </span>
+                                                        <span>
+                                                            info@domain.com
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        <script src="hotel.js"></script>
+                                    </body>
+
+
+    </head>
+</html>
